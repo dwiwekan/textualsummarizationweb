@@ -106,9 +106,9 @@ function renderResult(data) {
     detailTable.innerHTML += `<tr>
     <td>${key + 1}</td>
     <td>
-  ${row[1]}
+  ${row[0]}
     </td>
-    <td>${row[0]}</td>
+    <td>${row[1]}</td>
     <td>${row[2]}%</td>
   </tr>`;
   });
