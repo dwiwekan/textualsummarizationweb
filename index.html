@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    /> -->
+    <script
+      src="https://kit.fontawesome.com/dcbddb1f46.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/onepage-scroll.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/jquery.onepage-scroll.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Gus nara Ta</title>
+  </head>
+  <body>
+    <header></header>
+    <div class="loading-background"></div>
+    <img class="loading" src="loading2.svg" alt="" />
+
+    <main id="fullpage">
+      <section class="section section-first">
+        <div class="nav-btn nav-btn__right">
+          <p>Text entailment</p>
+          <i class="fa-solid fa-angles-down"></i>
+        </div>
+        <section class="page-info">
+          <h1 class="page-info__title">
+            EXTRACTIVE TEXT SUMMARIZATION DENGAN PENDEKATAN TEXTUAL ENTAILMENT
+            BERBASIS DEEP LEARNING
+          </h1>
+          <p class="page-info__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+            expedita beatae quis qui odit officia et dolorum unde. Quas, earum
+            impedit! Nostrum excepturi qui distinctio illo numquam corporis quis
+            id!
+          </p>
+        </section>
+        <section class="main-content">
+          <form action="">
+            <div class="extract-wrapper">
+              <div class="extract-container extract-container__left">
+                <h2>Teks</h2>
+                <div>
+                  <textarea class="teks-input" name="text"></textarea>
+                  <div class="teks-input__count"><span>0</span> kata</div>
+                </div>
+              </div>
+              <div class="extract-container extract-container__right">
+                <h2>Extractive Text Summarization</h2>
+                <div>
+                  <textarea class="teks-input" id="summary"></textarea>
+                  <div class="teks-input__count"><span>0</span> kata</div>
+                </div>
+              </div>
+            </div>
+            <div class="extract-detail">
+              <div class="extract-detail__setting">
+                <div class="slider-container flex-container">
+                  <label for="percentage">Persentase Peningkatan :</label>
+                  <div>
+                    <input
+                      type="range"
+                      min="1"
+                      max="100"
+                      value="50"
+                      class="slider"
+                      id="percent-range"
+                      name="persentase"
+                    />
+                    <p><span id="percentage-value">50</span>%</p>
+                  </div>
+                </div>
+                <div class="flex-container">
+                  <label for="kalimat-utama">Kalimat Utama : </label>
+                  <input type="hidden" value="" name="awal_akhir" />
+                  <div class="wrapper">
+                    <div class="select-btn">
+                      <span id="kalimat-utama">Pilih pengaturan</span>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="content">
+                      <ul class="options"></ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-container">
+                  <label for="kalimat-utama-sbg"
+                    >Kalimat Utama Sebagai :
+                  </label>
+                  <input type="hidden" value="" name="posisi" />
+                  <div class="wrapper">
+                    <div class="select-btn">
+                      <span id="kalimat-utama-sbg">Pilih pengaturan</span>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="content">
+                      <ul class="options"></ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="extract-detail__action">
+                <button id="submit-btn" type="button">
+                  Start Summarization
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </section>
+      <section class="section section-second">
+        <div class="nav-btn nav-btn__left">
+          <p>Text entailment</p>
+          <i class="fa-solid fa-angles-down"></i>
+        </div>
+        <section class="page-info">
+          <h1 class="page-info__title">TEXT ENTAILMENT</h1>
+          <p class="page-info__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+            expedita beatae quis qui odit officia et dolorum unde. Quas, earum
+            impedit! Nostrum excepturi qui distinctio illo numquam corporis quis
+            id!
+          </p>
+        </section>
+        <section class="main-content">
+          <div class="table-wrapper">
+            <table id="detail-table">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Premis</th>
+                  <th>Hipotesis</th>
+                  <th>Percentage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- <tr>
+                  <td>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corrupti expedita beatae quis qui odit officia et dolorum
+                    unde. Quas, earum impedit! Nostrum excepturi qui distinctio
+                    illo numquam corporis quis id!
+                  </td>
+                  <td>                    Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                  <td>50%</td>
+                </tr>
+                <tr>
+                  <td>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corrupti expedita beatae quis qui odit officia et dolorum
+                    unde. Quas, earum impedit! Nostrum excepturi qui distinctio
+                    illo numquam corporis quis id!
+                  </td>
+                  <td>                    Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                  <td>50%</td>
+                </tr>
+                <tr>
+                  <td>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corrupti expedita beatae quis qui odit officia et dolorum
+                    unde. Quas, earum impedit! Nostrum excepturi qui distinctio
+                    illo numquam corporis quis id!
+                  </td>
+                  <td>                    Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                  <td>50%</td>
+                </tr>
+                <tr>
+                  <td>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corrupti expedita beatae quis qui odit officia et dolorum
+                    unde. Quas, earum impedit! Nostrum excepturi qui distinctio
+                    illo numquam corporis quis id!
+                  </td>
+                  <td>                    Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                  <td>50%</td>
+                </tr>
+                <tr>
+                  <td>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corrupti expedita beatae quis qui odit officia et dolorum
+                    unde. Quas, earum impedit! Nostrum excepturi qui distinctio
+                    illo numquam corporis quis id!
+                  </td>
+                  <td>                    Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                  <td>50%</td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+
+  <script src="https://unpkg.com/axios@1.2.1/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</html>
