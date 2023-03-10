@@ -44,10 +44,19 @@
             BERBASIS DEEP LEARNING
           </h1>
           <p class="page-info__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            expedita beatae quis qui odit officia et dolorum unde. Quas, earum
-            impedit! Nostrum excepturi qui distinctio illo numquam corporis quis
-            id!
+            Extractive Text Summarization adalah teknik pengurangan dokumen yang
+            memilih sekelompok kalimat penting dari dokumen asli untuk membentuk
+            ringkasan. Teknik ini didasarkan pada pemahaman kalimat dan
+            pembentukan ringkasan dengan cara mengekstrak kalimat-kalimat
+            penting dan menempatkannya bersama untuk membentuk ringkasan yang
+            berisi inti dari dokumen asli. Tujuan dari extractive text
+            summarization adalah menghemat waktu dan tenaga dalam membaca
+            dokumen asli yang mungkin sangat panjang dan rumit.
+            <br />Dengan menggunakan pendekatan Textual Entailment berbasis deep
+            learning, Extractive Text Summarization dapat menjadi lebih efektif
+            dalam menghasilkan ringkasan dokumen asli yang akurat dan relevan
+            dengan mempertimbangkan hubungan semantik antara kalimat-kalimat
+            dalam dokumen asli.
           </p>
         </section>
         <section class="main-content">
@@ -87,10 +96,10 @@
                 </div>
                 <div class="flex-container">
                   <label for="kalimat-utama">Kalimat Utama : </label>
-                  <input type="hidden" value="" name="awal_akhir" />
+                  <input type="hidden" value="1" name="awal_akhir" />
                   <div class="wrapper">
                     <div class="select-btn">
-                      <span id="kalimat-utama">Pilih pengaturan</span>
+                      <span id="kalimat-utama">Awal Kalimat</span>
                       <i class="fa-solid fa-angle-down"></i>
                     </div>
                     <div class="content">
@@ -102,10 +111,10 @@
                   <label for="kalimat-utama-sbg"
                     >Kalimat Utama Sebagai :
                   </label>
-                  <input type="hidden" value="" name="posisi" />
+                  <input type="hidden" value="1" name="posisi" />
                   <div class="wrapper">
                     <div class="select-btn">
-                      <span id="kalimat-utama-sbg">Pilih pengaturan</span>
+                      <span id="kalimat-utama-sbg">Premise</span>
                       <i class="fa-solid fa-angle-down"></i>
                     </div>
                     <div class="content">
@@ -121,6 +130,23 @@
               </div>
             </div>
           </form>
+          <section class="page-info">
+            <p class="page-info__description">
+              Pastikan teks yang akan di ringkas berbahasa inggris dan memiliki lebih dari 1 kalimat (Setiap kalimat 
+              biasanya diakhiri dengan titik atau tanda lainnya). 
+              <br> Sebagai contoh : Quarterly profits at US media giant TimeWarner jumped 76% to $1.13bn 
+              (£600m) for the three months to December, from $639m year-earlier. TimeWarner said fourth 
+              quarter sales rose 2% to $11.1bn from $10.9bn. Its profits were buoyed by one-off gains 
+              which offset a profit dip at Warner Bros, and less users for AOL. Time Warner said on Friday 
+              that it now owns 8% of search-engine Google. But its own internet business, AOL, had has mixed 
+              fortunes. It lost 464,000 subscribers in the fourth quarter profits were lower than in the preceding 
+              three quarters. However, the company said AOL's underlying profit before exceptional items 
+              rose 8% on the back of stronger internet advertising revenues. It hopes to increase subscribers 
+              by offering the online service free to TimeWarner internet customers and will try to sign up AOL's 
+              existing customers for high-speed broadband. TimeWarner also has to restate 2000 and 2003 results 
+              following a probe by the US Securities Exchange Commission (SEC), which is close to concluding.
+            </p>
+          </section>
         </section>
       </section>
       <section class="section section-second">
@@ -131,10 +157,12 @@
         <section class="page-info">
           <h1 class="page-info__title">TEXT ENTAILMENT</h1>
           <p class="page-info__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            expedita beatae quis qui odit officia et dolorum unde. Quas, earum
-            impedit! Nostrum excepturi qui distinctio illo numquam corporis quis
-            id!
+            Textual Entailment adalah kemampuan sebuah kalimat atau teks dalam
+            menyatakan suatu informasi yang membutuhkan pengetahuan atau
+            informasi tambahan dari kalimat atau teks lainnya. Dalam Text
+            Summarization, Textual Entailment digunakan untuk memahami hubungan
+            antara kalimat-kalimat dalam dokumen asli dan mengekstrak
+            kalimat-kalimat yang paling penting untuk membentuk ringkasan.
           </p>
         </section>
         <section class="main-content">
