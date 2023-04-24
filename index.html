@@ -44,19 +44,11 @@
             BERBASIS DEEP LEARNING
           </h1>
           <p class="page-info__description">
-            Extractive Text Summarization adalah teknik pengurangan dokumen yang
-            memilih sekelompok kalimat penting dari dokumen asli untuk membentuk
-            ringkasan. Teknik ini didasarkan pada pemahaman kalimat dan
-            pembentukan ringkasan dengan cara mengekstrak kalimat-kalimat
-            penting dan menempatkannya bersama untuk membentuk ringkasan yang
-            berisi inti dari dokumen asli. Tujuan dari extractive text
-            summarization adalah menghemat waktu dan tenaga dalam membaca
-            dokumen asli yang mungkin sangat panjang dan rumit.
-            <br />Dengan menggunakan pendekatan Textual Entailment berbasis deep
-            learning, Extractive Text Summarization dapat menjadi lebih efektif
-            dalam menghasilkan ringkasan dokumen asli yang akurat dan relevan
-            dengan mempertimbangkan hubungan semantik antara kalimat-kalimat
-            dalam dokumen asli.
+            Extractive Text Summarization is a document reduction technique that selects a group of important sentences from the original document to form a summary. 
+            This technique is based on understanding sentences and summarizing by extracting important sentences and putting them together to form a summary that 
+            contains the essence of the original document. The goal of extractive text summarization is to save time and effort in reading the original document, which may be very long and complex.
+            <br/><br> Using a deep learning-based Textual Entailment approach, Extractive Text Summarization can become more effective in producing accurate and 
+            relevant summaries of the original document by considering the semantic relationships between sentences in the original document.
           </p>
         </section>
         <section class="main-content">
@@ -80,7 +72,7 @@
             <div class="extract-detail">
               <div class="extract-detail__setting">
                 <div class="slider-container flex-container">
-                  <label for="percentage">Persentase Peringkasan :</label>
+                  <label for="percentage">Summarization Percentage :</label>
                   <div>
                     <input
                       type="range"
@@ -95,11 +87,11 @@
                   </div>
                 </div>
                 <div class="flex-container">
-                  <label for="kalimat-utama">Kalimat Utama : </label>
+                  <label for="kalimat-utama">Main Paragraph : </label>
                   <input type="hidden" value="1" name="awal_akhir" />
                   <div class="wrapper">
                     <div class="select-btn">
-                      <span id="kalimat-utama">Awal Kalimat</span>
+                      <span id="kalimat-utama">First Paragraph</span>
                       <i class="fa-solid fa-angle-down"></i>
                     </div>
                     <div class="content">
@@ -109,7 +101,7 @@
                 </div>
                 <div class="flex-container">
                   <label for="kalimat-utama-sbg"
-                    >Kalimat Utama Sebagai :
+                    >Main Paragraph as :
                   </label>
                   <input type="hidden" value="1" name="posisi" />
                   <div class="wrapper">
@@ -132,9 +124,8 @@
           </form>
           <section class="page-info">
             <p class="page-info__description">
-              Pastikan teks yang akan di ringkas berbahasa inggris dan memiliki lebih dari 1 kalimat (Setiap kalimat 
-              biasanya diakhiri dengan titik atau tanda lainnya). 
-              <br> Sebagai contoh : French musician Jean-Michel Jarre is to perform at a concert in Copenhagen to 
+              Please ensure that the text to be summarized is in English and consists of more than one sentence (each sentence is usually ended with a period or other punctuation marks).
+              <br> For the example : French musician Jean-Michel Jarre is to perform at a concert in Copenhagen to 
               mark the bicentennial of the birth of writer Hans Christian Andersen. Denmark is holding a three-day 
               celebration of the life of the fairy-tale author, with a concert at Parken stadium on 2 April. Other 
               stars are expected to join the line-up in the coming months, and the Danish royal family will attend. 
@@ -163,12 +154,9 @@
         <section class="page-info">
           <h1 class="page-info__title">TEXTUAL ENTAILMENT</h1>
           <p class="page-info__description">
-            Textual Entailment adalah kemampuan sebuah kalimat atau teks dalam
-            menyatakan suatu informasi yang membutuhkan pengetahuan atau
-            informasi tambahan dari kalimat atau teks lainnya. Dalam Text
-            Summarization, Textual Entailment digunakan untuk memahami hubungan
-            antara kalimat-kalimat dalam dokumen asli dan mengekstrak
-            kalimat-kalimat yang paling penting untuk membentuk ringkasan.
+            Textual Entailment is the ability of a sentence or text to convey information that requires knowledge or additional information from another 
+            sentence or text. In Text Summarization, Textual Entailment is used to understand the relationships between sentences in the original document 
+            and to extract the most important sentences to form a summary.
           </p>
         </section>
         <section class="main-content">
@@ -177,8 +165,8 @@
               <thead>
                 <tr>
                   <th>No</th>
-                  <th>Premis</th>
-                  <th>Hipotesis</th>
+                  <th>Premise</th>
+                  <th>Hypothesis</th>
                   <th>Percentage</th>
                 </tr>
               </thead>
